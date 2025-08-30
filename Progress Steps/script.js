@@ -12,6 +12,8 @@ next.addEventListener("click", () => {
     currentActive = circles.length
   }
 
+  console.log("test")
+
   update()
 })
 
