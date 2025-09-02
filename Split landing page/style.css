@@ -22,23 +22,23 @@ body {
   margin: 0;
 }
 
-h1{
-    font-size: 4rem;
-    color: #fff;
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    z-index: 2;
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 2;
 }
 
 .split.left h1,
-.split.right h1{
+.split.right h1 {
   color: #fff;
 }
 
-.logo{
+.logo {
   position: absolute;
   left: 50%;
   top: 8%;
@@ -49,35 +49,34 @@ h1{
   z-index: 2;
 }
 
-.btn{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 50%;
-    top: 40%;
-    transform: translateX(-50%);
-    text-decoration: none;
-    color: #fff;
-    border: #fff solid 0.2rem;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    width: 15rem;
-    padding: 1.5rem;
-    z-index: 2;
+.btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 15rem;
+  padding: 1.5rem;
+  z-index: 2;
 }
 
-.split.left .btn:hover{
-    background-color: var(--left-button-hover-color);
-    border-color: var(--left-button-hover-color);
+.split.left .btn:hover {
+  background-color: var(--left-button-hover-color);
+  border-color: var(--left-button-hover-color);
 }
 
-.split.right .btn:hover{
-    background-color: var(--right-button-hover-color);
-    border-color: var(--right-button-hover-color);
+.split.right .btn:hover {
+  background-color: var(--right-button-hover-color);
+  border-color: var(--right-button-hover-color);
 }
-
 
 .container {
   position: relative;
@@ -111,8 +110,11 @@ h1{
   pointer-events: none;
 }
 
-.split.right, .split.left, .split.right::before,.split.left::before{
-    transition: all var(--speed) ease-in-out;
+.split.right,
+.split.left,
+.split.right::before,
+.split.left::before {
+  transition: all var(--speed) ease-in-out;
 }
 
 .split.right {
@@ -132,30 +134,30 @@ h1{
   pointer-events: none;
 }
 
-.hover-left .left{
-  width: var(--hover-width);  
+.hover-left .left {
+  width: var(--hover-width);
 }
 
-.hover-left .right{
-    width: var(--other-width);
+.hover-left .right {
+  width: var(--other-width);
 }
 
-.hover-right .right{
-    width: var(--hover-width);  
-  }
-  
-  .hover-right .left{
-      width: var(--other-width);
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .left {
+  width: var(--other-width);
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    top: 30%;
   }
 
-  @media(max-width:800px){
-    h1{
-        font-size: 2rem;
-        top: 30%;
-    }
-
-    .btn{
-        padding: 1.2rem;
-        width: 12rem;
-    }
+  .btn {
+    padding: 1.2rem;
+    width: 12rem;
   }
+}
