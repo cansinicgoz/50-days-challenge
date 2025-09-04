@@ -63,20 +63,3 @@ function getRandomLoadingMessage() {
   const randomIndex = Math.floor(Math.random() * loadingMessages.length)
   return loadingMessages[randomIndex]
 }
-
-/*
-function generateJoke(){
-    const config = {
-        headers: {
-            'Accept': 'application/json'
-        }
-    }
-
-
-    fetch('https://icanhazdadjoke.com', config)
-        .then(response => response.json())
-        .then(data => {
-            jokeEl.innerHTML = data.joke;
-        });
-}
-*/
